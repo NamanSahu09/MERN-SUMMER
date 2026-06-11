@@ -7,12 +7,12 @@ const students = [
   {
     name: "Satyarth",
     course: "Full Stack Development",
-    marks: [20, 18, 24, 28, 26]
+    marks: [2, 1, 7, 1, 0]
   },
   {
     name: "Rohit",
     course: "Full Stack Development",
-    marks: [25, 22, 28, 29, 27]
+    marks: [2, 5, 2, 1, 3]
   },
   {
     name: "Naman",
@@ -49,6 +49,14 @@ const formattedStudents = students.map(student => {
   };
 });
 
-console.log("Formatted Students Array:\n", formattedStudents);
+//console.log("Formatted Students Array:\n", formattedStudents);
 
+
+//Pass hone wale students ko filter kar raha
+const passedStudents = formattedStudents.filter(student => student.resultStatus === "Pass");
+console.log("\nPassed Students:\n", passedStudents);
+
+//Top-performing students ko filter karna 
+const topStudents = formattedStudents.filter(student => student.percentage > 85);
+console.log("\nTop Students (Percentage > 80%):\n", topStudents);
 
