@@ -57,6 +57,6 @@ const passedStudents = formattedStudents.filter(student => student.resultStatus 
 console.log("\nPassed Students:\n", passedStudents);
 
 //Top-performing students ko filter karna 
-const topStudents = formattedStudents.filter(student => student.percentage > 85);
+const topStudents = formattedStudents.filter(student => student.percentage > 80);
 console.log("\nTop Students (Percentage > 80%):\n", topStudents);
 
